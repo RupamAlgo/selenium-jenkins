@@ -38,10 +38,10 @@ public class TestBase {
 			if(browser.equalsIgnoreCase("chrome"))
 			{
 		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
-				ChromeOptions options = new ChromeOptions();
-				options.addArguments("--remote-allow-origins=*");
-				options.addArguments("--disable-notifications");
-		driver = new ChromeDriver(options);// driver gets the life
+				//ChromeOptions options = new ChromeOptions();
+				//options.addArguments("--remote-allow-origins=*");
+				//options.addArguments("--disable-notifications");
+		driver = new ChromeDriver();// driver gets the life
 			}
 			if(browser.equalsIgnoreCase("firefox"))
 			{
